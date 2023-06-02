@@ -36,6 +36,9 @@ public enum ExpandCollapse : Swift.Int {
     get
   }
 }
+public protocol VmaxInstreamAd : AnyObject {
+  func update(container view: UIKit.UIView)
+}
 public enum FamilyParenting : Swift.Int {
   case adoption
   case babiesToddlers
@@ -1348,6 +1351,7 @@ extension Vmax.VmaxAdSpace {
   public func pause()
   public func resume()
   public func close()
+  public func updateContainer(view: UIKit.UIView)
 }
 extension Vmax.VmaxAdSpace : Vmax.VmaxAdDelegate {
   public func onLoadSuccess(vmaxAd: Vmax.VmaxAd)
