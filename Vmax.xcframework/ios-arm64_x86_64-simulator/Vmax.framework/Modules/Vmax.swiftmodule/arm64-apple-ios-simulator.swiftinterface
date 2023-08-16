@@ -15,7 +15,7 @@ import UIKit
 import WebKit
 import _Concurrency
 public enum VmaxAdAssetType {
-  case instreamVideo, outstreamVideo, display, mediation
+  case instreamVideo, outstreamVideo, display, imamediation
   public static func == (a: Vmax.VmaxAdAssetType, b: Vmax.VmaxAdAssetType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -925,7 +925,7 @@ extension Vmax.VmaxUser {
   public func setCity(city: Swift.String)
   public func setRegion(region: Swift.String)
   public func setCountry(country: Swift.String)
-  public func setZipCode(zipCode: Swift.Int)
+  public func setZipCode(zipCode: Swift.String)
   public func setKeywords(keywords: [Swift.String])
 }
 public protocol VmaxAdAssetHelper : ObjectiveC.NSObject {
@@ -1352,6 +1352,8 @@ extension Vmax.VmaxAdSpace {
   public func resume()
   public func close()
   public func updateContainer(view: UIKit.UIView)
+  public func getVmaxAd() -> Vmax.VmaxAd?
+  public func isVmaxAdSpaceRefreshable() -> Swift.Bool
 }
 extension Vmax.VmaxAdSpace : Vmax.VmaxAdDelegate {
   public func onLoadSuccess(vmaxAd: Vmax.VmaxAd)
@@ -1419,6 +1421,9 @@ public protocol VmaxAd : ObjectiveC.NSObject {
 extension Vmax.VmaxAd {
   public func set(layout: Vmax.VmaxLayout)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
+}
+public protocol VmaxFlutterAd : Vmax.VmaxAd {
+  func getAdResponse() -> Swift.String?
 }
 public enum HealthFitness : Swift.Int {
   case exercise
