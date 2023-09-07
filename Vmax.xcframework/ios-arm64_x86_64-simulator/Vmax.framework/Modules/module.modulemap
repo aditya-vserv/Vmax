@@ -6,6 +6,6 @@ framework module Vmax {
 }
 
 module Vmax.Swift {
-    header "Vmax-Swift.h"
-    requires objc
+  header "Vmax-Swift.h"
+  requires objc
 }
