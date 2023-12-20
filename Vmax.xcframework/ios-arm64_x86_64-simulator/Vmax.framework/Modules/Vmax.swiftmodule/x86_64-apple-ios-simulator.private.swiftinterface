@@ -625,10 +625,13 @@ final public class VmaxSDKError : Vmax.VmaxError {
     case renditionFailed
     case adRequestResponseFailed
     case invalidUserAgent
+    case invalidMarketingName
+    case invalidPlatformName
     case executionStopped
     case assetHelperNotInMemory
     case assetDelegateNotInMemory
     case vppNotInMemory
+    case appNotInMemory
     case containerIsMissingParentViewController
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
@@ -936,16 +939,22 @@ public protocol VmaxAdAssetHelper : ObjectiveC.NSObject {
   func show<T>(container: T)
   func getAssetView() -> UIKit.UIView?
   func set(layout: Vmax.VmaxLayout)
+  func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
+  func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   func set(adInteractionState: Vmax.InteractionState)
   func pause()
   func resume()
   func close()
+  func handleAdClick()
 }
 extension Vmax.VmaxAdAssetHelper {
   public func set(layout: Vmax.VmaxLayout)
+  public func set(adInfo: Vmax.VmaxAdInfo)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
   public func set(adInteractionState: Vmax.InteractionState)
+  public func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
+  public func handleAdClick()
 }
 public protocol VmaxAdAssetDelegate : AnyObject {
   func onPrepared<T>(asset: Vmax.VmaxAdAssetHelper, result: T)
@@ -1167,16 +1176,11 @@ extension Vmax.StyleFashion : Swift.CaseIterable {
 }
 public enum VmaxClientError : Swift.Error {
   case badURL
-  case unknownError
+  case unknownError(error: Swift.String)
   case errorHttpResponse
   case notFound
-  case unknownResponseCode
+  case unknownResponseCode(code: Swift.Int)
   case invalidData
-  public static func == (a: Vmax.VmaxClientError, b: Vmax.VmaxClientError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public enum Society : Swift.Int {
   case dating
@@ -1415,17 +1419,51 @@ public protocol VmaxAd : ObjectiveC.NSObject {
   func render(container: UIKit.UIView)
   static func getSignatures() -> [Swift.String]
   func set(layout: Vmax.VmaxLayout)
+  func set(delegate: Vmax.VmaxAdDelegate)
+  func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
+  func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   func pause()
   func resume()
   func close()
+  func handleAdClick()
 }
 extension Vmax.VmaxAd {
+  public func set(delegate: Vmax.VmaxAdDelegate)
+  public func set(adInfo: Vmax.VmaxAdInfo)
   public func set(layout: Vmax.VmaxLayout)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
+  public func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
+  public func handleAdClick()
 }
 public protocol VmaxFlutterAd : Vmax.VmaxAd {
   func getAdResponse() -> Swift.String?
+}
+final public class VmaxAdInfo {
+  final public var signature: Swift.String?
+  final public var adMarkup: Swift.String?
+  final public var adId: Swift.String?
+  final public var adName: Swift.String?
+  final public var campaignId: Swift.String?
+  final public var campaignName: Swift.String?
+  final public var marketerId: Swift.String?
+  final public var marketerName: Swift.String?
+  final public var brand: Swift.String?
+  final public var agency: Swift.String?
+  final public var orderId: Swift.String?
+  final public var orderName: Swift.String?
+  final public var adSystem: Swift.String?
+  final public var adTitle: Swift.String?
+  final public var adDescription: Swift.String?
+  final public var ctaText: Swift.String?
+  final public var skipOffset: Swift.String?
+  final public var adDuration: Swift.String?
+  final public var isCTAAvailable: Swift.Bool?
+  final public var adIconUrl: Swift.String?
+  final public var adClickUrl: Swift.String?
+  final public var companionResourceUrls: [Swift.String]?
+  public init()
+  @objc deinit
 }
 public enum HealthFitness : Swift.Int {
   case exercise
@@ -1739,8 +1777,6 @@ extension Vmax.VmaxCTAaction : Swift.Hashable {}
 extension Vmax.StyleFashion : Swift.Equatable {}
 extension Vmax.StyleFashion : Swift.Hashable {}
 extension Vmax.StyleFashion : Swift.RawRepresentable {}
-extension Vmax.VmaxClientError : Swift.Equatable {}
-extension Vmax.VmaxClientError : Swift.Hashable {}
 extension Vmax.Society : Swift.Equatable {}
 extension Vmax.Society : Swift.Hashable {}
 extension Vmax.Society : Swift.RawRepresentable {}
