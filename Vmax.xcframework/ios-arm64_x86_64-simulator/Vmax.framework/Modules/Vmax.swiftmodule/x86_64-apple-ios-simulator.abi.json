@@ -57123,7 +57123,7 @@
       "kind": "StringLiteral",
       "offset": 469,
       "length": 12,
-      "value": "\"A-IO-4.0.6\""
+      "value": "\"A-IO-4.0.7\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxManager.swift",
