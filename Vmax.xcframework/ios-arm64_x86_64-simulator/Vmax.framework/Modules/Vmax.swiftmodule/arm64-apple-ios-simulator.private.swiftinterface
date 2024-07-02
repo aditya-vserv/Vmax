@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Vmax
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVKit
 import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
@@ -132,6 +133,10 @@ extension Vmax.Sports : Swift.CaseIterable {
 }
 public protocol VmaxMediaEventsDelegate {
   func set(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
+  func update(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
+}
+extension Vmax.VmaxMediaEventsDelegate {
+  public func update(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
 }
 public protocol VmaxMediaEvents : AnyObject {
   func onImpression<T>(info: T?)
@@ -149,6 +154,7 @@ public protocol VmaxMediaEvents : AnyObject {
   func onExitFullscreen<T>(info: T?)
   func onClose<T>(info: T?)
   func onClick<T>(info: T?)
+  func onClickComplete<T>(info: T?)
   func onSkip<T>(info: T?)
   func onError<T>(info: T?, error: Vmax.VmaxError)
   func onSkippableStateChange<T>(info: T?)
@@ -169,6 +175,7 @@ extension Vmax.VmaxMediaEvents {
   public func onExitFullscreen<T>(info: T?)
   public func onClose<T>(info: T?)
   public func onClick<T>(info: T?)
+  public func onClickComplete<T>(info: T?)
   public func onSkip<T>(info: T?)
   public func onError<T>(info: T?, error: Vmax.VmaxError)
   public func onSkippableStateChange<T>(info: T?)
@@ -328,6 +335,7 @@ extension Vmax.HomeGarden : Swift.CaseIterable {
   public static var shared: Vmax.VmaxRegistry
   public func addVmaxAds(vmaxAds: [Vmax.VmaxAd.Type])
   public func registerViewability(viewability: Vmax.VmaxAdViewability.Type)
+  public func getViewabilityVersion() -> Swift.String?
   @objc deinit
 }
 public enum TechnologyComputing : Swift.Int {
@@ -521,6 +529,10 @@ public protocol VmaxAdViewability : ObjectiveC.NSObject {
 }
 public protocol VmaxViewabilityProtocol {
   func add(viewability: Vmax.VmaxAdViewability)
+  func update(viewability: Vmax.VmaxAdViewability)
+}
+extension Vmax.VmaxViewabilityProtocol {
+  public func update(viewability: Vmax.VmaxAdViewability)
 }
 public enum AdClickBrowser : Swift.Int {
   case embedded
@@ -538,19 +550,23 @@ extension Vmax.AdClickBrowser : Swift.CaseIterable {
   }
 }
 @_hasMissingDesignatedInitializers public class VmaxManager {
+  public var isAppMuted: Swift.Bool
   public static var shared: Vmax.VmaxManager
   @objc deinit
 }
 extension Vmax.VmaxManager {
-  public func initialize(accountId: Swift.Int, appId: Swift.Int, secretKey: Swift.String, delegate: Vmax.InitializationStatusDelegate)
+  public func initialize(accountKey: Swift.String, appId: Swift.Int, secretKey: Swift.String, delegate: Vmax.InitializationStatusDelegate)
   public func createVmaxAdSpace(tagId: Swift.String) -> Vmax.VmaxAdSpace?
   public func createVmaxAdspotRequestBuilder() -> Vmax.VmaxAdspotRequestBuilder
+  public func createAdsInsertionRequestBuilder() -> Vmax.VmaxAdsInsertionRequestBuilder
   public func process(vmaxRequest: Vmax.VmaxRequest)
+  public func process(adsInsertionRequest: Vmax.VmaxAdsInsertionRequest, avPlayer: AVFoundation.AVPlayer, adContainer: UIKit.UIView, customLayout: Vmax.VmaxLayout?, adsInsertionProcessDelegate: Vmax.VmaxAdsInsertionProcessDelegate?, adsInsertionDelegate: Vmax.VmaxAdsInsertionDelegate?)
   public func getVmaxUser() -> Vmax.VmaxUser
   public func getVmaxApplication() -> Vmax.VmaxApplication
   public func getVmaxDevice() -> Vmax.VmaxDevice
   public func getVmaxRegistry() -> Vmax.VmaxRegistry
   public func getVersion() -> Swift.String
+  public func getAdvertisingId() -> Swift.String?
 }
 public enum IllegalContent : Swift.Int {
   case illegaleContent
@@ -630,9 +646,11 @@ final public class VmaxSDKError : Vmax.VmaxError {
     case executionStopped
     case assetHelperNotInMemory
     case assetDelegateNotInMemory
+    case delegateNotInMemory
     case vppNotInMemory
     case appNotInMemory
     case containerIsMissingParentViewController
+    case requiredDependencyNotFound
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -792,6 +810,61 @@ extension Vmax.VmaxVastEvent : Swift.CaseIterable {
     get
   }
 }
+public protocol VmaxAdsInsertion : ObjectiveC.NSObject {
+  func process(vmaxAdsInsertionModel: Vmax.VmaxAdsInsertionModel)
+  func pauseProcessing()
+  func resumeProcessing()
+  func stopProcessing()
+}
+public struct VmaxAdsInsertionModel {
+  public var avPlayer: AVFoundation.AVPlayer?
+  public var adContainer: UIKit.UIView?
+  public var customLayout: Vmax.VmaxLayout?
+  public var bumperAdSpaceList: [Vmax.VmaxAdSpace]?
+  public var regularAdSpaceList: [Vmax.VmaxAdSpace]?
+  public var recurrence: Vmax.AdRecurrence?
+  public var minBreakDuration: Swift.Int?
+  public var maxBreakDuration: Swift.Int?
+  public var adsInsertionDelegate: Vmax.VmaxAdsInsertionDelegate?
+}
+public enum AdRecurrence {
+  case once
+  case loop
+  public static func == (a: Vmax.AdRecurrence, b: Vmax.AdRecurrence) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol VmaxAdsInsertionDelegate : ObjectiveC.NSObject {
+  func onStart()
+  func onEnd()
+}
+public protocol VmaxAdsInsertionProcessDelegate : ObjectiveC.NSObject {
+  func onSuccess(adsInsertionHandler: Vmax.VmaxAdsInsertionHandler)
+  func onError(vmaxError: Vmax.VmaxError)
+}
+@_hasMissingDesignatedInitializers public class VmaxAdsInsertionHandler {
+  public func pause()
+  public func resume()
+  public func destroy()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VmaxAdsInsertionRequest : Vmax.VmaxRequest {
+  @objc deinit
+}
+public class DampeningRequest {
+  public init()
+  public init(maxSleepValue: Swift.Int)
+  public func set(delegate: Vmax.DampeningRequestDelegate)
+  public func dampenAdRequest()
+  public func resetDampen()
+  public func releaseObject()
+  @objc deinit
+}
+public protocol DampeningRequestDelegate {
+  func attemptAdRequest(dampeningRequest: Vmax.DampeningRequest)
+}
 extension CoreFoundation.CGAffineTransform {
   public init(from source: CoreFoundation.CGRect, to destination: CoreFoundation.CGRect)
 }
@@ -941,20 +1014,26 @@ public protocol VmaxAdAssetHelper : ObjectiveC.NSObject {
   func set(layout: Vmax.VmaxLayout)
   func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
+  func set(cacheMode: Vmax.VmaxCacheMode)
+  func set(mediaLoadTimeout: Swift.Int)
   func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   func set(adInteractionState: Vmax.InteractionState)
   func pause()
   func resume()
   func close()
   func handleAdClick()
+  func cacheMediaIfNotCached()
 }
 extension Vmax.VmaxAdAssetHelper {
   public func set(layout: Vmax.VmaxLayout)
   public func set(adInfo: Vmax.VmaxAdInfo)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
+  public func set(cacheMode: Vmax.VmaxCacheMode)
+  public func set(mediaLoadTimeout: Swift.Int)
   public func set(adInteractionState: Vmax.InteractionState)
   public func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   public func handleAdClick()
+  public func cacheMediaIfNotCached()
 }
 public protocol VmaxAdAssetDelegate : AnyObject {
   func onPrepared<T>(asset: Vmax.VmaxAdAssetHelper, result: T)
@@ -1054,6 +1133,7 @@ extension Vmax.VmaxDevice {
   public func setConnectionType(connectionType: Vmax.ConnectionType)
   public func getDeviceType() -> Vmax.DeviceType?
   public func getConnectionType() -> Vmax.ConnectionType?
+  public func getDeviceModel() -> Swift.String?
   public func setDeviceType(type: Vmax.DeviceType)
   public func setMake(make: Swift.String)
   public func setModel(model: Swift.String)
@@ -1062,6 +1142,18 @@ extension Vmax.VmaxDevice {
   public func setLocation(location: CoreLocation.CLLocation)
   public func setPlatform(platform: Swift.Int)
   public func setMarketingName(marketingName: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VmaxAdsInsertionRequestBuilder : Vmax.VMaxRequestBuilder {
+  @discardableResult
+  public func addBumperAdSpace(adSpace: Vmax.VmaxAdSpace) -> Vmax.VmaxAdsInsertionRequestBuilder
+  @discardableResult
+  public func setAdSpaceRecurrence(_ adRecurrence: Vmax.AdRecurrence) -> Vmax.VmaxAdsInsertionRequestBuilder
+  @discardableResult
+  public func setMinBreakDuration(_ duration: Swift.Int) -> Vmax.VmaxAdsInsertionRequestBuilder
+  @discardableResult
+  public func setMaxBreakDuration(_ duration: Swift.Int) -> Vmax.VmaxAdsInsertionRequestBuilder
+  override public func build() -> Vmax.VmaxAdsInsertionRequest
+  @objc deinit
 }
 public enum VmaxSections : Swift.Int {
   case artsEntertainment
@@ -1347,8 +1439,8 @@ extension Vmax.VmaxAdSpace {
   public func setRequestedAdOrientation(orientation: Vmax.Orientation)
   public func setAdClickBrowser(type: Vmax.AdClickBrowser)
   public func setInterstitialExperience(interstitialExperience: Swift.Bool)
-  public func setAdEventDelegate(adEventDelegate: Vmax.VmaxAdEventDelegate)
-  public func setMediaEvents(mediaEvents: Vmax.VmaxMediaEvents)
+  public func addAdEventDelegate(adEventDelegate: Vmax.VmaxAdEventDelegate)
+  public func addMediaEvents(mediaEvents: Vmax.VmaxMediaEvents)
   public func setCompanionEvents(companionEvents: Vmax.VmaxCompanionEvents)
   public func setLayout(layout: Vmax.VmaxLayout)
   public func showAd(container: UIKit.UIView)
@@ -1359,6 +1451,10 @@ extension Vmax.VmaxAdSpace {
   public func close()
   public func updateContainer(view: UIKit.UIView)
   public func getVmaxAd() -> Vmax.VmaxAd?
+  public func getId() -> Swift.String
+  public func getState() -> Vmax.VmaxAdSpaceState
+  public func setCacheMode(cacheMode: Vmax.VmaxCacheMode)
+  public func setMediaLoadTimeout(timeoutInSeconds: Swift.Int)
   public func isVmaxAdSpaceRefreshable() -> Swift.Bool
 }
 extension Vmax.VmaxAdSpace : Vmax.VmaxAdDelegate {
@@ -1370,6 +1466,31 @@ extension Vmax.VmaxAdSpace : Vmax.VmaxAdDelegate {
   public func onAdResumed()
   public func onClose(vmaxAd: Vmax.VmaxAd)
   public func onClicked(vmaxAd: Vmax.VmaxAd)
+}
+public enum VmaxAdSpaceState {
+  case unknown
+  case initialized
+  case adRequested
+  case adReceived
+  case adReady
+  case adRender
+  case adError
+  case adRenderError
+  case adClose
+  public static func == (a: Vmax.VmaxAdSpaceState, b: Vmax.VmaxAdSpaceState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum VmaxCacheMode {
+  case fullCaching
+  case markupCaching
+  public static func == (a: Vmax.VmaxCacheMode, b: Vmax.VmaxCacheMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum LawGovtPolitics : Swift.Int {
   case immigration
@@ -1422,19 +1543,25 @@ public protocol VmaxAd : ObjectiveC.NSObject {
   func set(delegate: Vmax.VmaxAdDelegate)
   func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
+  func set(cacheMode: Vmax.VmaxCacheMode)
+  func set(mediaLoadTimeout: Swift.Int)
   func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   func pause()
   func resume()
   func close()
   func handleAdClick()
+  func cacheMediaIfNotCached()
 }
 extension Vmax.VmaxAd {
   public func set(delegate: Vmax.VmaxAdDelegate)
   public func set(adInfo: Vmax.VmaxAdInfo)
   public func set(layout: Vmax.VmaxLayout)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
+  public func set(cacheMode: Vmax.VmaxCacheMode)
+  public func set(mediaLoadTimeout: Swift.Int)
   public func getVmaxAdInfo() -> Vmax.VmaxAdInfo?
   public func handleAdClick()
+  public func cacheMediaIfNotCached()
 }
 public protocol VmaxFlutterAd : Vmax.VmaxAd {
   func getAdResponse() -> Swift.String?
@@ -1462,6 +1589,7 @@ final public class VmaxAdInfo {
   final public var adIconUrl: Swift.String?
   final public var adClickUrl: Swift.String?
   final public var companionResourceUrls: [Swift.String]?
+  final public var cacheMode: Vmax.VmaxCacheMode
   public init()
   @objc deinit
 }
@@ -1754,6 +1882,8 @@ extension Vmax.PersonalFinance : Swift.RawRepresentable {}
 extension Vmax.VmaxVastEvent : Swift.Equatable {}
 extension Vmax.VmaxVastEvent : Swift.Hashable {}
 extension Vmax.VmaxVastEvent : Swift.RawRepresentable {}
+extension Vmax.AdRecurrence : Swift.Equatable {}
+extension Vmax.AdRecurrence : Swift.Hashable {}
 extension Vmax.Science : Swift.Equatable {}
 extension Vmax.Science : Swift.Hashable {}
 extension Vmax.Science : Swift.RawRepresentable {}
@@ -1791,6 +1921,10 @@ extension Vmax.NonStandardContent : Swift.RawRepresentable {}
 extension Vmax.ArtsEntertainment : Swift.Equatable {}
 extension Vmax.ArtsEntertainment : Swift.Hashable {}
 extension Vmax.ArtsEntertainment : Swift.RawRepresentable {}
+extension Vmax.VmaxAdSpaceState : Swift.Equatable {}
+extension Vmax.VmaxAdSpaceState : Swift.Hashable {}
+extension Vmax.VmaxCacheMode : Swift.Equatable {}
+extension Vmax.VmaxCacheMode : Swift.Hashable {}
 extension Vmax.LawGovtPolitics : Swift.Equatable {}
 extension Vmax.LawGovtPolitics : Swift.Hashable {}
 extension Vmax.LawGovtPolitics : Swift.RawRepresentable {}

@@ -3582,6 +3582,75 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(vmaxMediaEvents:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Vmax.VmaxMediaEvents]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxMediaEvents",
+                    "printedName": "Vmax.VmaxMediaEvents",
+                    "usr": "s:4Vmax0A11MediaEventsP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19MediaEventsDelegateP6update04vmaxbC0ySayAA0abC0_pG_tF",
+            "mangledName": "$s4Vmax0A19MediaEventsDelegateP6update04vmaxbC0ySayAA0abC0_pG_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxMediaEventsDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxMediaEventsDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(vmaxMediaEvents:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Vmax.VmaxMediaEvents]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxMediaEvents",
+                    "printedName": "Vmax.VmaxMediaEvents",
+                    "usr": "s:4Vmax0A11MediaEventsP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19MediaEventsDelegatePAAE6update04vmaxbC0ySayAA0abC0_pG_tF",
+            "mangledName": "$s4Vmax0A19MediaEventsDelegatePAAE6update04vmaxbC0ySayAA0abC0_pG_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxMediaEventsDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxMediaEventsDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -4154,6 +4223,43 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A11MediaEventsP7onClick4infoyqd__Sg_tlF",
             "mangledName": "$s4Vmax0A11MediaEventsP7onClick4infoyqd__Sg_tlF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Vmax.VmaxMediaEvents>",
+            "sugared_genericSig": "<Self, T where Self : Vmax.VmaxMediaEvents>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClickComplete",
+            "printedName": "onClickComplete(info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A11MediaEventsP15onClickComplete4infoyqd__Sg_tlF",
+            "mangledName": "$s4Vmax0A11MediaEventsP15onClickComplete4infoyqd__Sg_tlF",
             "moduleName": "Vmax",
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Vmax.VmaxMediaEvents>",
             "sugared_genericSig": "<Self, T where Self : Vmax.VmaxMediaEvents>",
@@ -4824,6 +4930,42 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A11MediaEventsPAAE7onClick4infoyqd__Sg_tlF",
             "mangledName": "$s4Vmax0A11MediaEventsPAAE7onClick4infoyqd__Sg_tlF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Vmax.VmaxMediaEvents>",
+            "sugared_genericSig": "<Self, T where Self : Vmax.VmaxMediaEvents>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onClickComplete",
+            "printedName": "onClickComplete(info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A11MediaEventsPAAE15onClickComplete4infoyqd__Sg_tlF",
+            "mangledName": "$s4Vmax0A11MediaEventsPAAE15onClickComplete4infoyqd__Sg_tlF",
             "moduleName": "Vmax",
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Vmax.VmaxMediaEvents>",
             "sugared_genericSig": "<Self, T where Self : Vmax.VmaxMediaEvents>",
@@ -9285,6 +9427,36 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A8RegistryC19registerViewability11viewabilityyAA0a2AdD0_pXp_tF",
             "mangledName": "$s4Vmax0A8RegistryC19registerViewability11viewabilityyAA0a2AdD0_pXp_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getViewabilityVersion",
+            "printedName": "getViewabilityVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A8RegistryC21getViewabilityVersionSSSgyF",
+            "mangledName": "$s4Vmax0A8RegistryC21getViewabilityVersionSSSgyF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -14857,6 +15029,59 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(viewability:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdViewability",
+                "printedName": "Vmax.VmaxAdViewability",
+                "usr": "s:4Vmax0A13AdViewabilityP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19ViewabilityProtocolP6update11viewabilityyAA0a2AdB0_p_tF",
+            "mangledName": "$s4Vmax0A19ViewabilityProtocolP6update11viewabilityyAA0a2AdB0_p_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxViewabilityProtocol>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxViewabilityProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(viewability:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdViewability",
+                "printedName": "Vmax.VmaxAdViewability",
+                "usr": "s:4Vmax0A13AdViewabilityP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19ViewabilityProtocolPAAE6update11viewabilityyAA0a2AdB0_p_tF",
+            "mangledName": "$s4Vmax0A19ViewabilityProtocolPAAE6update11viewabilityyAA0a2AdB0_p_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxViewabilityProtocol>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxViewabilityProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -15214,10 +15439,104 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "Vmax"
+      },
+      {
         "kind": "TypeDecl",
         "name": "VmaxManager",
         "printedName": "VmaxManager",
         "children": [
+          {
+            "kind": "Var",
+            "name": "isAppMuted",
+            "printedName": "isAppMuted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A7ManagerC10isAppMutedSbvp",
+            "mangledName": "$s4Vmax0A7ManagerC10isAppMutedSbvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A7ManagerC10isAppMutedSbvg",
+                "mangledName": "$s4Vmax0A7ManagerC10isAppMutedSbvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A7ManagerC10isAppMutedSbvs",
+                "mangledName": "$s4Vmax0A7ManagerC10isAppMutedSbvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A7ManagerC10isAppMutedSbvM",
+                "mangledName": "$s4Vmax0A7ManagerC10isAppMutedSbvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "shared",
@@ -15321,7 +15640,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(accountId:appId:secretKey:delegate:)",
+            "printedName": "initialize(accountKey:appId:secretKey:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15330,9 +15649,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -15354,8 +15673,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:4Vmax0A7ManagerC10initialize9accountId03appE09secretKey8delegateySi_SiSSAA28InitializationStatusDelegate_ptF",
-            "mangledName": "$s4Vmax0A7ManagerC10initialize9accountId03appE09secretKey8delegateySi_SiSSAA28InitializationStatusDelegate_ptF",
+            "usr": "s:4Vmax0A7ManagerC10initialize10accountKey5appId06secretE08delegateySS_SiSSAA28InitializationStatusDelegate_ptF",
+            "mangledName": "$s4Vmax0A7ManagerC10initialize10accountKey5appId06secretE08delegateySS_SiSSAA28InitializationStatusDelegate_ptF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -15426,6 +15745,29 @@
           },
           {
             "kind": "Function",
+            "name": "createAdsInsertionRequestBuilder",
+            "printedName": "createAdsInsertionRequestBuilder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequestBuilder",
+                "printedName": "Vmax.VmaxAdsInsertionRequestBuilder",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7ManagerC32createAdsInsertionRequestBuilderAA0adefG0CyF",
+            "mangledName": "$s4Vmax0A7ManagerC32createAdsInsertionRequestBuilderAA0adefG0CyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "process",
             "printedName": "process(vmaxRequest:)",
             "children": [
@@ -15444,6 +15786,88 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A7ManagerC7process11vmaxRequestyAA0aE0C_tF",
             "mangledName": "$s4Vmax0A7ManagerC7process11vmaxRequestyAA0aE0C_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(adsInsertionRequest:avPlayer:adContainer:customLayout:adsInsertionProcessDelegate:adsInsertionDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequest",
+                "printedName": "Vmax.VmaxAdsInsertionRequest",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayer",
+                "printedName": "AVFoundation.AVPlayer",
+                "usr": "c:objc(cs)AVPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.VmaxLayout?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxLayout",
+                    "printedName": "Vmax.VmaxLayout",
+                    "usr": "s:4Vmax0A6LayoutP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.VmaxAdsInsertionProcessDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdsInsertionProcessDelegate",
+                    "printedName": "Vmax.VmaxAdsInsertionProcessDelegate",
+                    "usr": "s:4Vmax0A27AdsInsertionProcessDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.VmaxAdsInsertionDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdsInsertionDelegate",
+                    "printedName": "Vmax.VmaxAdsInsertionDelegate",
+                    "usr": "s:4Vmax0A20AdsInsertionDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7ManagerC7process19adsInsertionRequest8avPlayer11adContainer12customLayout0dE15ProcessDelegate0deN0yAA0a3AdseF0C_So8AVPlayerCSo6UIViewCAA0aL0_pSgAA0aoemN0_pSgAA0aoeN0_pSgtF",
+            "mangledName": "$s4Vmax0A7ManagerC7process19adsInsertionRequest8avPlayer11adContainer12customLayout0dE15ProcessDelegate0deN0yAA0a3AdseF0C_So8AVPlayerCSo6UIViewCAA0aL0_pSgAA0aoemN0_pSgAA0aoeN0_pSgtF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -15559,6 +15983,37 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A7ManagerC10getVersionSSyF",
             "mangledName": "$s4Vmax0A7ManagerC10getVersionSSyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdvertisingId",
+            "printedName": "getAdvertisingId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7ManagerC16getAdvertisingIdSSSgyF",
+            "mangledName": "$s4Vmax0A7ManagerC16getAdvertisingIdSSSgyF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -17912,6 +18367,43 @@
               },
               {
                 "kind": "Var",
+                "name": "delegateNotInMemory",
+                "printedName": "delegateNotInMemory",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Vmax.VmaxSDKError.Codes.Type) -> Vmax.VmaxSDKError.Codes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Codes",
+                        "printedName": "Vmax.VmaxSDKError.Codes",
+                        "usr": "s:4Vmax0A8SDKErrorC5CodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Vmax.VmaxSDKError.Codes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Codes",
+                            "printedName": "Vmax.VmaxSDKError.Codes",
+                            "usr": "s:4Vmax0A8SDKErrorC5CodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Vmax0A8SDKErrorC5CodesO19delegateNotInMemoryyA2EmF",
+                "mangledName": "$s4Vmax0A8SDKErrorC5CodesO19delegateNotInMemoryyA2EmF",
+                "moduleName": "Vmax"
+              },
+              {
+                "kind": "Var",
                 "name": "vppNotInMemory",
                 "printedName": "vppNotInMemory",
                 "children": [
@@ -18019,6 +18511,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:4Vmax0A8SDKErrorC5CodesO38containerIsMissingParentViewControlleryA2EmF",
                 "mangledName": "$s4Vmax0A8SDKErrorC5CodesO38containerIsMissingParentViewControlleryA2EmF",
+                "moduleName": "Vmax"
+              },
+              {
+                "kind": "Var",
+                "name": "requiredDependencyNotFound",
+                "printedName": "requiredDependencyNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Vmax.VmaxSDKError.Codes.Type) -> Vmax.VmaxSDKError.Codes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Codes",
+                        "printedName": "Vmax.VmaxSDKError.Codes",
+                        "usr": "s:4Vmax0A8SDKErrorC5CodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Vmax.VmaxSDKError.Codes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Codes",
+                            "printedName": "Vmax.VmaxSDKError.Codes",
+                            "usr": "s:4Vmax0A8SDKErrorC5CodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Vmax0A8SDKErrorC5CodesO26requiredDependencyNotFoundyA2EmF",
+                "mangledName": "$s4Vmax0A8SDKErrorC5CodesO26requiredDependencyNotFoundyA2EmF",
                 "moduleName": "Vmax"
               },
               {
@@ -18865,7 +19394,8 @@
         "mangledName": "$s4Vmax15ViewPortManagerP",
         "moduleName": "Vmax",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -22121,13 +22651,1583 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Vmax",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "Vmax"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertion",
+        "printedName": "VmaxAdsInsertion",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(vmaxAdsInsertionModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionModel",
+                "printedName": "Vmax.VmaxAdsInsertionModel",
+                "usr": "s:4Vmax0A17AdsInsertionModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdsInsertionP7process04vmaxbC5ModelyAA0abcF0V_tF",
+            "mangledName": "$s4Vmax0A12AdsInsertionP7process04vmaxbC5ModelyAA0abcF0V_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertion>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertion>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseProcessing",
+            "printedName": "pauseProcessing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdsInsertionP15pauseProcessingyyF",
+            "mangledName": "$s4Vmax0A12AdsInsertionP15pauseProcessingyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertion>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertion>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeProcessing",
+            "printedName": "resumeProcessing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdsInsertionP16resumeProcessingyyF",
+            "mangledName": "$s4Vmax0A12AdsInsertionP16resumeProcessingyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertion>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertion>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopProcessing",
+            "printedName": "stopProcessing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdsInsertionP14stopProcessingyyF",
+            "mangledName": "$s4Vmax0A12AdsInsertionP14stopProcessingyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertion>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertion>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Vmax0A12AdsInsertionP",
+        "mangledName": "$s4Vmax0A12AdsInsertionP",
+        "moduleName": "Vmax",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionModel",
+        "printedName": "VmaxAdsInsertionModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "avPlayer",
+            "printedName": "avPlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayer",
+                    "printedName": "AVFoundation.AVPlayer",
+                    "usr": "c:objc(cs)AVPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayer",
+                        "printedName": "AVFoundation.AVPlayer",
+                        "usr": "c:objc(cs)AVPlayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayer",
+                        "printedName": "AVFoundation.AVPlayer",
+                        "usr": "c:objc(cs)AVPlayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV8avPlayerSo8AVPlayerCSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adContainer",
+            "printedName": "adContainer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV11adContainerSo6UIViewCSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customLayout",
+            "printedName": "customLayout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.VmaxLayout?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxLayout",
+                    "printedName": "Vmax.VmaxLayout",
+                    "usr": "s:4Vmax0A6LayoutP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.VmaxLayout?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxLayout",
+                        "printedName": "Vmax.VmaxLayout",
+                        "usr": "s:4Vmax0A6LayoutP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.VmaxLayout?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxLayout",
+                        "printedName": "Vmax.VmaxLayout",
+                        "usr": "s:4Vmax0A6LayoutP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV12customLayoutAA0aF0_pSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bumperAdSpaceList",
+            "printedName": "bumperAdSpaceList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Vmax.VmaxAdSpace]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Vmax.VmaxAdSpace]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpace",
+                        "printedName": "Vmax.VmaxAdSpace",
+                        "usr": "s:4Vmax0A7AdSpaceC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Vmax.VmaxAdSpace]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Vmax.VmaxAdSpace]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VmaxAdSpace",
+                            "printedName": "Vmax.VmaxAdSpace",
+                            "usr": "s:4Vmax0A7AdSpaceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Vmax.VmaxAdSpace]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Vmax.VmaxAdSpace]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VmaxAdSpace",
+                            "printedName": "Vmax.VmaxAdSpace",
+                            "usr": "s:4Vmax0A7AdSpaceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV17bumperAdSpaceListSayAA0afG0CGSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regularAdSpaceList",
+            "printedName": "regularAdSpaceList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Vmax.VmaxAdSpace]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Vmax.VmaxAdSpace]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpace",
+                        "printedName": "Vmax.VmaxAdSpace",
+                        "usr": "s:4Vmax0A7AdSpaceC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Vmax.VmaxAdSpace]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Vmax.VmaxAdSpace]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VmaxAdSpace",
+                            "printedName": "Vmax.VmaxAdSpace",
+                            "usr": "s:4Vmax0A7AdSpaceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Vmax.VmaxAdSpace]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Vmax.VmaxAdSpace]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VmaxAdSpace",
+                            "printedName": "Vmax.VmaxAdSpace",
+                            "usr": "s:4Vmax0A7AdSpaceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV18regularAdSpaceListSayAA0afG0CGSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recurrence",
+            "printedName": "recurrence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.AdRecurrence?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdRecurrence",
+                    "printedName": "Vmax.AdRecurrence",
+                    "usr": "s:4Vmax12AdRecurrenceO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.AdRecurrence?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdRecurrence",
+                        "printedName": "Vmax.AdRecurrence",
+                        "usr": "s:4Vmax12AdRecurrenceO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.AdRecurrence?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdRecurrence",
+                        "printedName": "Vmax.AdRecurrence",
+                        "usr": "s:4Vmax12AdRecurrenceO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV10recurrenceAA12AdRecurrenceOSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minBreakDuration",
+            "printedName": "minBreakDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16minBreakDurationSiSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxBreakDuration",
+            "printedName": "maxBreakDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV16maxBreakDurationSiSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adsInsertionDelegate",
+            "printedName": "adsInsertionDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vmax.VmaxAdsInsertionDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdsInsertionDelegate",
+                    "printedName": "Vmax.VmaxAdsInsertionDelegate",
+                    "usr": "s:4Vmax0A20AdsInsertionDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvp",
+            "mangledName": "$s4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.VmaxAdsInsertionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdsInsertionDelegate",
+                        "printedName": "Vmax.VmaxAdsInsertionDelegate",
+                        "usr": "s:4Vmax0A20AdsInsertionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvg",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vmax.VmaxAdsInsertionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdsInsertionDelegate",
+                        "printedName": "Vmax.VmaxAdsInsertionDelegate",
+                        "usr": "s:4Vmax0A20AdsInsertionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvs",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvM",
+                "mangledName": "$s4Vmax0A17AdsInsertionModelV03adsC8DelegateAA0abcF0_pSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4Vmax0A17AdsInsertionModelV",
+        "mangledName": "$s4Vmax0A17AdsInsertionModelV",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdRecurrence",
+        "printedName": "AdRecurrence",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "once",
+            "printedName": "once",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.AdRecurrence.Type) -> Vmax.AdRecurrence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdRecurrence",
+                    "printedName": "Vmax.AdRecurrence",
+                    "usr": "s:4Vmax12AdRecurrenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.AdRecurrence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdRecurrence",
+                        "printedName": "Vmax.AdRecurrence",
+                        "usr": "s:4Vmax12AdRecurrenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax12AdRecurrenceO4onceyA2CmF",
+            "mangledName": "$s4Vmax12AdRecurrenceO4onceyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "loop",
+            "printedName": "loop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.AdRecurrence.Type) -> Vmax.AdRecurrence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdRecurrence",
+                    "printedName": "Vmax.AdRecurrence",
+                    "usr": "s:4Vmax12AdRecurrenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.AdRecurrence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdRecurrence",
+                        "printedName": "Vmax.AdRecurrence",
+                        "usr": "s:4Vmax12AdRecurrenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax12AdRecurrenceO4loopyA2CmF",
+            "mangledName": "$s4Vmax12AdRecurrenceO4loopyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRecurrence",
+                "printedName": "Vmax.AdRecurrence",
+                "usr": "s:4Vmax12AdRecurrenceO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRecurrence",
+                "printedName": "Vmax.AdRecurrence",
+                "usr": "s:4Vmax12AdRecurrenceO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax12AdRecurrenceO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s4Vmax12AdRecurrenceO2eeoiySbAC_ACtFZ",
+            "moduleName": "Vmax",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax12AdRecurrenceO9hashValueSivp",
+            "mangledName": "$s4Vmax12AdRecurrenceO9hashValueSivp",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax12AdRecurrenceO9hashValueSivg",
+                "mangledName": "$s4Vmax12AdRecurrenceO9hashValueSivg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax12AdRecurrenceO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4Vmax12AdRecurrenceO4hash4intoys6HasherVz_tF",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Vmax12AdRecurrenceO",
+        "mangledName": "$s4Vmax12AdRecurrenceO",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionDelegate",
+        "printedName": "VmaxAdsInsertionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onStart",
+            "printedName": "onStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A20AdsInsertionDelegateP7onStartyyF",
+            "mangledName": "$s4Vmax0A20AdsInsertionDelegateP7onStartyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertionDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onEnd",
+            "printedName": "onEnd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A20AdsInsertionDelegateP5onEndyyF",
+            "mangledName": "$s4Vmax0A20AdsInsertionDelegateP5onEndyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertionDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Vmax0A20AdsInsertionDelegateP",
+        "mangledName": "$s4Vmax0A20AdsInsertionDelegateP",
+        "moduleName": "Vmax",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionProcessDelegate",
+        "printedName": "VmaxAdsInsertionProcessDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess(adsInsertionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionHandler",
+                "printedName": "Vmax.VmaxAdsInsertionHandler",
+                "usr": "s:4Vmax0A19AdsInsertionHandlerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A27AdsInsertionProcessDelegateP9onSuccess03adsC7HandleryAA0abcI0C_tF",
+            "mangledName": "$s4Vmax0A27AdsInsertionProcessDelegateP9onSuccess03adsC7HandleryAA0abcI0C_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertionProcessDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertionProcessDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(vmaxError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxError",
+                "printedName": "Vmax.VmaxError",
+                "usr": "s:4Vmax0A5ErrorC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A27AdsInsertionProcessDelegateP7onError04vmaxG0yAA0aG0C_tF",
+            "mangledName": "$s4Vmax0A27AdsInsertionProcessDelegateP7onError04vmaxG0yAA0aG0C_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdsInsertionProcessDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdsInsertionProcessDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Vmax0A27AdsInsertionProcessDelegateP",
+        "mangledName": "$s4Vmax0A27AdsInsertionProcessDelegateP",
+        "moduleName": "Vmax",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionHandler",
+        "printedName": "VmaxAdsInsertionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19AdsInsertionHandlerC5pauseyyF",
+            "mangledName": "$s4Vmax0A19AdsInsertionHandlerC5pauseyyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19AdsInsertionHandlerC6resumeyyF",
+            "mangledName": "$s4Vmax0A19AdsInsertionHandlerC6resumeyyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A19AdsInsertionHandlerC7destroyyyF",
+            "mangledName": "$s4Vmax0A19AdsInsertionHandlerC7destroyyyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4Vmax0A19AdsInsertionHandlerC",
+        "mangledName": "$s4Vmax0A19AdsInsertionHandlerC",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -22161,11 +24261,312 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "Vmax"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionRequest",
+        "printedName": "VmaxAdsInsertionRequest",
+        "declKind": "Class",
+        "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequest",
+        "mangledName": "$s4Vmax0A19AdsInsertionRequestC",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Vmax@objc(cs)VmaxRequest",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Vmax.VmaxRequest",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Vmax",
         "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DampeningRequest",
+        "printedName": "DampeningRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DampeningRequest",
+                "printedName": "Vmax.DampeningRequest",
+                "usr": "s:4Vmax16DampeningRequestC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Vmax16DampeningRequestCACycfc",
+            "mangledName": "$s4Vmax16DampeningRequestCACycfc",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(maxSleepValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DampeningRequest",
+                "printedName": "Vmax.DampeningRequest",
+                "usr": "s:4Vmax16DampeningRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Vmax16DampeningRequestC13maxSleepValueACSi_tcfc",
+            "mangledName": "$s4Vmax16DampeningRequestC13maxSleepValueACSi_tcfc",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DampeningRequestDelegate",
+                "printedName": "Vmax.DampeningRequestDelegate",
+                "usr": "s:4Vmax24DampeningRequestDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax16DampeningRequestC3set8delegateyAA0bC8Delegate_p_tF",
+            "mangledName": "$s4Vmax16DampeningRequestC3set8delegateyAA0bC8Delegate_p_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dampenAdRequest",
+            "printedName": "dampenAdRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax16DampeningRequestC08dampenAdC0yyF",
+            "mangledName": "$s4Vmax16DampeningRequestC08dampenAdC0yyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetDampen",
+            "printedName": "resetDampen()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax16DampeningRequestC11resetDampenyyF",
+            "mangledName": "$s4Vmax16DampeningRequestC11resetDampenyyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "releaseObject",
+            "printedName": "releaseObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax16DampeningRequestC13releaseObjectyyF",
+            "mangledName": "$s4Vmax16DampeningRequestC13releaseObjectyyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4Vmax16DampeningRequestC",
+        "mangledName": "$s4Vmax16DampeningRequestC",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DampeningRequestDelegate",
+        "printedName": "DampeningRequestDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "attemptAdRequest",
+            "printedName": "attemptAdRequest(dampeningRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DampeningRequest",
+                "printedName": "Vmax.DampeningRequest",
+                "usr": "s:4Vmax16DampeningRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax24DampeningRequestDelegateP09attemptAdC009dampeningC0yAA0bC0C_tF",
+            "mangledName": "$s4Vmax24DampeningRequestDelegateP09attemptAdC009dampeningC0yAA0bC0C_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.DampeningRequestDelegate>",
+            "sugared_genericSig": "<Self where Self : Vmax.DampeningRequestDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Vmax24DampeningRequestDelegateP",
+        "mangledName": "$s4Vmax24DampeningRequestDelegateP",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -25364,6 +27765,60 @@
           },
           {
             "kind": "Function",
+            "name": "set",
+            "printedName": "set(cacheMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperP3set9cacheModeyAA0a5CacheG0O_tF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperP3set9cacheModeyAA0a5CacheG0O_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(mediaLoadTimeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperP3set16mediaLoadTimeoutySi_tF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperP3set16mediaLoadTimeoutySi_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getVmaxAdInfo",
             "printedName": "getVmaxAdInfo()",
             "children": [
@@ -25505,6 +27960,27 @@
           },
           {
             "kind": "Function",
+            "name": "cacheMediaIfNotCached",
+            "printedName": "cacheMediaIfNotCached()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperP21cacheMediaIfNotCachedyyF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperP21cacheMediaIfNotCachedyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "set",
             "printedName": "set(layout:)",
             "children": [
@@ -25584,6 +28060,58 @@
           {
             "kind": "Function",
             "name": "set",
+            "printedName": "set(cacheMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperPAAE3set9cacheModeyAA0a5CacheG0O_tF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperPAAE3set9cacheModeyAA0a5CacheG0O_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(mediaLoadTimeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperPAAE3set16mediaLoadTimeoutySi_tF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperPAAE3set16mediaLoadTimeoutySi_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
             "printedName": "set(adInteractionState:)",
             "children": [
               {
@@ -25650,6 +28178,26 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A13AdAssetHelperPAAE06handleB5ClickyyF",
             "mangledName": "$s4Vmax0A13AdAssetHelperPAAE06handleB5ClickyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cacheMediaIfNotCached",
+            "printedName": "cacheMediaIfNotCached()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A13AdAssetHelperPAAE21cacheMediaIfNotCachedyyF",
+            "mangledName": "$s4Vmax0A13AdAssetHelperPAAE21cacheMediaIfNotCachedyyF",
             "moduleName": "Vmax",
             "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetHelper>",
             "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetHelper>",
@@ -25827,9 +28375,6 @@
             "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAdAssetDelegate>",
             "sugared_genericSig": "<Self where Self : Vmax.VmaxAdAssetDelegate>",
             "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -28544,6 +31089,37 @@
           },
           {
             "kind": "Function",
+            "name": "getDeviceModel",
+            "printedName": "getDeviceModel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A6DeviceC03getB5ModelSSSgyF",
+            "mangledName": "$s4Vmax0A6DeviceC03getB5ModelSSSgyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setDeviceType",
             "printedName": "setDeviceType(type:)",
             "children": [
@@ -28806,16 +31382,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Vmax",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -28830,6 +31396,230 @@
         "printedName": "CommonCrypto",
         "declKind": "Import",
         "moduleName": "Vmax"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdsInsertionRequestBuilder",
+        "printedName": "VmaxAdsInsertionRequestBuilder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "addBumperAdSpace",
+            "printedName": "addBumperAdSpace(adSpace:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequestBuilder",
+                "printedName": "Vmax.VmaxAdsInsertionRequestBuilder",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdSpace",
+                "printedName": "Vmax.VmaxAdSpace",
+                "usr": "s:4Vmax0A7AdSpaceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A26AdsInsertionRequestBuilderC16addBumperAdSpace02adI0AcA0ahI0C_tF",
+            "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC16addBumperAdSpace02adI0AcA0ahI0C_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAdSpaceRecurrence",
+            "printedName": "setAdSpaceRecurrence(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequestBuilder",
+                "printedName": "Vmax.VmaxAdsInsertionRequestBuilder",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRecurrence",
+                "printedName": "Vmax.AdRecurrence",
+                "usr": "s:4Vmax12AdRecurrenceO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A26AdsInsertionRequestBuilderC20setAdSpaceRecurrenceyAcA0gI0OF",
+            "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC20setAdSpaceRecurrenceyAcA0gI0OF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMinBreakDuration",
+            "printedName": "setMinBreakDuration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequestBuilder",
+                "printedName": "Vmax.VmaxAdsInsertionRequestBuilder",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A26AdsInsertionRequestBuilderC19setMinBreakDurationyACSiF",
+            "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC19setMinBreakDurationyACSiF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMaxBreakDuration",
+            "printedName": "setMaxBreakDuration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequestBuilder",
+                "printedName": "Vmax.VmaxAdsInsertionRequestBuilder",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A26AdsInsertionRequestBuilderC19setMaxBreakDurationyACSiF",
+            "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC19setMaxBreakDurationyACSiF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdsInsertionRequest",
+                "printedName": "Vmax.VmaxAdsInsertionRequest",
+                "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A26AdsInsertionRequestBuilderC5buildAA0abcD0CyF",
+            "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC5buildAA0abcD0CyF",
+            "moduleName": "Vmax",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Vmax@objc(cs)VmaxAdsInsertionRequestBuilder",
+        "mangledName": "$s4Vmax0A26AdsInsertionRequestBuilderC",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Vmax@objc(cs)VMaxRequestBuilder",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Vmax.VMaxRequestBuilder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -36516,8 +39306,8 @@
           },
           {
             "kind": "Function",
-            "name": "setAdEventDelegate",
-            "printedName": "setAdEventDelegate(adEventDelegate:)",
+            "name": "addAdEventDelegate",
+            "printedName": "addAdEventDelegate(adEventDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36532,8 +39322,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:4Vmax0A7AdSpaceC03setB13EventDelegate02adeF0yAA0abeF0_p_tF",
-            "mangledName": "$s4Vmax0A7AdSpaceC03setB13EventDelegate02adeF0yAA0abeF0_p_tF",
+            "usr": "s:4Vmax0A7AdSpaceC03addB13EventDelegate02adeF0yAA0abeF0_p_tF",
+            "mangledName": "$s4Vmax0A7AdSpaceC03addB13EventDelegate02adeF0yAA0abeF0_p_tF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -36544,8 +39334,8 @@
           },
           {
             "kind": "Function",
-            "name": "setMediaEvents",
-            "printedName": "setMediaEvents(mediaEvents:)",
+            "name": "addMediaEvents",
+            "printedName": "addMediaEvents(mediaEvents:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36560,8 +39350,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:4Vmax0A7AdSpaceC14setMediaEvents05mediaF0yAA0aeF0_p_tF",
-            "mangledName": "$s4Vmax0A7AdSpaceC14setMediaEvents05mediaF0yAA0aeF0_p_tF",
+            "usr": "s:4Vmax0A7AdSpaceC14addMediaEvents05mediaF0yAA0aeF0_p_tF",
+            "mangledName": "$s4Vmax0A7AdSpaceC14addMediaEvents05mediaF0yAA0aeF0_p_tF",
             "moduleName": "Vmax",
             "declAttributes": [
               "AccessControl",
@@ -36832,6 +39622,108 @@
           },
           {
             "kind": "Function",
+            "name": "getId",
+            "printedName": "getId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7AdSpaceC5getIdSSyF",
+            "mangledName": "$s4Vmax0A7AdSpaceC5getIdSSyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getState",
+            "printedName": "getState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdSpaceState",
+                "printedName": "Vmax.VmaxAdSpaceState",
+                "usr": "s:4Vmax0A12AdSpaceStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7AdSpaceC8getStateAA0abcE0OyF",
+            "mangledName": "$s4Vmax0A7AdSpaceC8getStateAA0abcE0OyF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCacheMode",
+            "printedName": "setCacheMode(cacheMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7AdSpaceC12setCacheMode05cacheF0yAA0aeF0O_tF",
+            "mangledName": "$s4Vmax0A7AdSpaceC12setCacheMode05cacheF0yAA0aeF0O_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMediaLoadTimeout",
+            "printedName": "setMediaLoadTimeout(timeoutInSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A7AdSpaceC19setMediaLoadTimeout16timeoutInSecondsySi_tF",
+            "mangledName": "$s4Vmax0A7AdSpaceC19setMediaLoadTimeout16timeoutInSecondsySi_tF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "isVmaxAdSpaceRefreshable",
             "printedName": "isVmaxAdSpaceRefreshable()",
             "children": [
@@ -37087,6 +39979,671 @@
             "printedName": "VmaxAdDelegate",
             "usr": "s:4Vmax0A10AdDelegateP",
             "mangledName": "$s4Vmax0A10AdDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxAdSpaceState",
+        "printedName": "VmaxAdSpaceState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO7unknownyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO7unknownyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "initialized",
+            "printedName": "initialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO11initializedyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO11initializedyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adRequested",
+            "printedName": "adRequested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO11adRequestedyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO11adRequestedyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adReceived",
+            "printedName": "adReceived",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO10adReceivedyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO10adReceivedyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adReady",
+            "printedName": "adReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO7adReadyyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO7adReadyyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adRender",
+            "printedName": "adRender",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO8adRenderyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO8adRenderyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adError",
+            "printedName": "adError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO7adErroryA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO7adErroryA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adRenderError",
+            "printedName": "adRenderError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO13adRenderErroryA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO13adRenderErroryA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Var",
+            "name": "adClose",
+            "printedName": "adClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxAdSpaceState.Type) -> Vmax.VmaxAdSpaceState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxAdSpaceState",
+                    "printedName": "Vmax.VmaxAdSpaceState",
+                    "usr": "s:4Vmax0A12AdSpaceStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxAdSpaceState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxAdSpaceState",
+                        "printedName": "Vmax.VmaxAdSpaceState",
+                        "usr": "s:4Vmax0A12AdSpaceStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A12AdSpaceStateO7adCloseyA2CmF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO7adCloseyA2CmF",
+            "moduleName": "Vmax"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdSpaceState",
+                "printedName": "Vmax.VmaxAdSpaceState",
+                "usr": "s:4Vmax0A12AdSpaceStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxAdSpaceState",
+                "printedName": "Vmax.VmaxAdSpaceState",
+                "usr": "s:4Vmax0A12AdSpaceStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdSpaceStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "Vmax",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A12AdSpaceStateO9hashValueSivp",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO9hashValueSivp",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A12AdSpaceStateO9hashValueSivg",
+                "mangledName": "$s4Vmax0A12AdSpaceStateO9hashValueSivg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A12AdSpaceStateO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4Vmax0A12AdSpaceStateO4hash4intoys6HasherVz_tF",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Vmax0A12AdSpaceStateO",
+        "mangledName": "$s4Vmax0A12AdSpaceStateO",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VmaxCacheMode",
+        "printedName": "VmaxCacheMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fullCaching",
+            "printedName": "fullCaching",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxCacheMode.Type) -> Vmax.VmaxCacheMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxCacheMode",
+                    "printedName": "Vmax.VmaxCacheMode",
+                    "usr": "s:4Vmax0A9CacheModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxCacheMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxCacheMode",
+                        "printedName": "Vmax.VmaxCacheMode",
+                        "usr": "s:4Vmax0A9CacheModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A9CacheModeO11fullCachingyA2CmF",
+            "mangledName": "$s4Vmax0A9CacheModeO11fullCachingyA2CmF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "markupCaching",
+            "printedName": "markupCaching",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Vmax.VmaxCacheMode.Type) -> Vmax.VmaxCacheMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxCacheMode",
+                    "printedName": "Vmax.VmaxCacheMode",
+                    "usr": "s:4Vmax0A9CacheModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Vmax.VmaxCacheMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VmaxCacheMode",
+                        "printedName": "Vmax.VmaxCacheMode",
+                        "usr": "s:4Vmax0A9CacheModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Vmax0A9CacheModeO13markupCachingyA2CmF",
+            "mangledName": "$s4Vmax0A9CacheModeO13markupCachingyA2CmF",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A9CacheModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s4Vmax0A9CacheModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "Vmax",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A9CacheModeO9hashValueSivp",
+            "mangledName": "$s4Vmax0A9CacheModeO9hashValueSivp",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A9CacheModeO9hashValueSivg",
+                "mangledName": "$s4Vmax0A9CacheModeO9hashValueSivg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A9CacheModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4Vmax0A9CacheModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "Vmax",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Vmax0A9CacheModeO",
+        "mangledName": "$s4Vmax0A9CacheModeO",
+        "moduleName": "Vmax",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -39054,6 +42611,60 @@
           },
           {
             "kind": "Function",
+            "name": "set",
+            "printedName": "set(cacheMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdP3set9cacheModeyAA0a5CacheE0O_tF",
+            "mangledName": "$s4Vmax0A2AdP3set9cacheModeyAA0a5CacheE0O_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(mediaLoadTimeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdP3set16mediaLoadTimeoutySi_tF",
+            "mangledName": "$s4Vmax0A2AdP3set16mediaLoadTimeoutySi_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getVmaxAdInfo",
             "printedName": "getVmaxAdInfo()",
             "children": [
@@ -39174,6 +42785,30 @@
           },
           {
             "kind": "Function",
+            "name": "cacheMediaIfNotCached",
+            "printedName": "cacheMediaIfNotCached()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdP21cacheMediaIfNotCachedyyF",
+            "mangledName": "$s4Vmax0A2AdP21cacheMediaIfNotCachedyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "set",
             "printedName": "set(delegate:)",
             "children": [
@@ -39278,6 +42913,58 @@
           },
           {
             "kind": "Function",
+            "name": "set",
+            "printedName": "set(cacheMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdPAAE3set9cacheModeyAA0a5CacheE0O_tF",
+            "mangledName": "$s4Vmax0A2AdPAAE3set9cacheModeyAA0a5CacheE0O_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(mediaLoadTimeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdPAAE3set16mediaLoadTimeoutySi_tF",
+            "mangledName": "$s4Vmax0A2AdPAAE3set16mediaLoadTimeoutySi_tF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getVmaxAdInfo",
             "printedName": "getVmaxAdInfo()",
             "children": [
@@ -39319,6 +43006,26 @@
             "declKind": "Func",
             "usr": "s:4Vmax0A2AdPAAE06handleB5ClickyyF",
             "mangledName": "$s4Vmax0A2AdPAAE06handleB5ClickyyF",
+            "moduleName": "Vmax",
+            "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
+            "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cacheMediaIfNotCached",
+            "printedName": "cacheMediaIfNotCached()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Vmax0A2AdPAAE21cacheMediaIfNotCachedyyF",
+            "mangledName": "$s4Vmax0A2AdPAAE21cacheMediaIfNotCachedyyF",
             "moduleName": "Vmax",
             "genericSig": "<τ_0_0 where τ_0_0 : Vmax.VmaxAd>",
             "sugared_genericSig": "<Self where Self : Vmax.VmaxAd>",
@@ -42053,6 +45760,102 @@
                 "declKind": "Accessor",
                 "usr": "s:4Vmax0A6AdInfoC21companionResourceUrlsSaySSGSgvM",
                 "mangledName": "$s4Vmax0A6AdInfoC21companionResourceUrlsSaySSGSgvM",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cacheMode",
+            "printedName": "cacheMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VmaxCacheMode",
+                "printedName": "Vmax.VmaxCacheMode",
+                "usr": "s:4Vmax0A9CacheModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovp",
+            "mangledName": "$s4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovp",
+            "moduleName": "Vmax",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxCacheMode",
+                    "printedName": "Vmax.VmaxCacheMode",
+                    "usr": "s:4Vmax0A9CacheModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovg",
+                "mangledName": "$s4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovg",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VmaxCacheMode",
+                    "printedName": "Vmax.VmaxCacheMode",
+                    "usr": "s:4Vmax0A9CacheModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovs",
+                "mangledName": "$s4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0Ovs",
+                "moduleName": "Vmax",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0OvM",
+                "mangledName": "$s4Vmax0A6AdInfoC9cacheModeAA0a5CacheE0OvM",
                 "moduleName": "Vmax",
                 "implicit": true,
                 "declAttributes": [
@@ -52933,6 +56736,13 @@
       "value": "\"id\""
     },
     {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/GeoDetectionService\/VmaxGeoDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 21,
+      "value": "\"geoDetectionService\""
+    },
+    {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRefreshHandler\/VmaxAdRefreshHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
@@ -57114,23 +60924,30 @@
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 437,
+      "offset": 450,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxManager.swift",
       "kind": "StringLiteral",
-      "offset": 469,
-      "length": 12,
-      "value": "\"A-IO-4.0.7\""
+      "offset": 482,
+      "length": 13,
+      "value": "\"A-IO-4.0.10\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 975,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxManager.swift",
       "kind": "StringLiteral",
-      "offset": 787,
-      "length": 24,
-      "value": "\"VmaxManager initilized\""
+      "offset": 1098,
+      "length": 25,
+      "value": "\"VmaxManager Initialized\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Models&Enums\/VmaxPages\/VmaxPagesIllegalContent.swift",
@@ -57493,22 +61310,36 @@
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
       "offset": 1065,
-      "length": 14,
+      "length": 19,
       "value": "1025"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1098,
       "length": 14,
       "value": "1026"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
-      "length": 38,
+      "offset": 1126,
+      "length": 14,
       "value": "1027"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1154,
+      "length": 38,
+      "value": "1028"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 26,
+      "value": "1029"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
@@ -57682,22 +61513,36 @@
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
       "offset": 1065,
-      "length": 14,
+      "length": 19,
       "value": "1025"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1098,
       "length": 14,
       "value": "1026"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
-      "length": 38,
+      "offset": 1126,
+      "length": 14,
       "value": "1027"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1154,
+      "length": 38,
+      "value": "1028"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 26,
+      "value": "1029"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
@@ -57871,22 +61716,36 @@
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
       "offset": 1065,
-      "length": 14,
+      "length": 19,
       "value": "1025"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1098,
       "length": 14,
       "value": "1026"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
-      "length": 38,
+      "offset": 1126,
+      "length": 14,
       "value": "1027"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1154,
+      "length": 38,
+      "value": "1028"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 26,
+      "value": "1029"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/VmaxError\/VmaxSDKError.swift",
@@ -58358,6 +62217,27 @@
       "value": "\"Vmax.VmaxPagesPersonalFinance\""
     },
     {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdsInsertionRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 626,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdsInsertionRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 668,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdsInsertionRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 50,
+      "value": "\"VmaxAdsInsertionHelper.VmaxAdsInsertionProcessor\""
+    },
+    {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseSeatbid.swift",
       "kind": "IntegerLiteral",
       "offset": 223,
@@ -58398,6 +62278,41 @@
       "offset": 243,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRequestAdvisor\/DampeningRequestAdvisor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 934,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRequestAdvisor\/DampeningRequestAdvisor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 973,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRequestAdvisor\/DampeningRequestAdvisor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7278,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRequestAdvisor\/DampeningRequestAdvisor.swift",
+      "kind": "StringLiteral",
+      "offset": 7364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxAdRequestAdvisor\/DampeningRequestAdvisor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7401,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Models&Enums\/VmaxPages\/VmaxPagesScience.swift",
@@ -59511,6 +63426,13 @@
       "offset": 370,
       "length": 4,
       "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/UserProfileService\/VmaxUserProfileManager.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 20,
+      "value": "\"userProfileService\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Models&Enums\/VmaxSections.swift",
@@ -61153,140 +65075,140 @@
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 250,
       "length": 8,
       "value": "\"remote\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 281,
+      "offset": 280,
       "length": 7,
       "value": "\"local\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 250,
       "length": 8,
       "value": "\"remote\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 281,
+      "offset": 280,
       "length": 7,
       "value": "\"local\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 931,
       "length": 9,
       "value": "\"ad-meta\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponseFallback1ExtMeta.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 931,
       "length": 9,
       "value": "\"ad-meta\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 248,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 269,
+      "offset": 268,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 288,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 308,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 248,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 269,
+      "offset": 268,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 288,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 308,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 248,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 269,
+      "offset": 268,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 288,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 308,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2138,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaFallback.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2138,
       "length": 4,
       "value": "\"id\""
     },
@@ -61748,21 +65670,35 @@
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdSpace.swift",
       "kind": "BooleanLiteral",
-      "offset": 1694,
+      "offset": 1732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdSpace.swift",
       "kind": "IntegerLiteral",
-      "offset": 1729,
+      "offset": 1767,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdSpace.swift",
       "kind": "BooleanLiteral",
-      "offset": 21270,
+      "offset": 1813,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdSpace.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4146,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Public\/Core\/VmaxAdSpace.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25909,
       "length": 4,
       "value": "true"
     },
@@ -62847,84 +66783,84 @@
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 238,
+      "offset": 237,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 259,
+      "offset": 258,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
+      "offset": 278,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
+      "offset": 298,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 238,
+      "offset": 237,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 259,
+      "offset": 258,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
+      "offset": 278,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
+      "offset": 298,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 238,
+      "offset": 237,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 259,
+      "offset": 258,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
+      "offset": 278,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/RequestImpExtMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
+      "offset": 298,
       "length": 1,
       "value": "3"
     },
@@ -64771,24 +68707,122 @@
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 546,
-      "length": 40,
-      "value": "\"https:\/\/as.vmax.com\/adspot\/1.0.0\/query\""
+      "kind": "BooleanLiteral",
+      "offset": 196,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
       "kind": "StringLiteral",
-      "offset": 626,
-      "length": 23,
-      "value": "\"https:\/\/ups.vmax.com\/\""
+      "offset": 472,
+      "length": 13,
+      "value": "\"as.vmax.com\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
       "kind": "StringLiteral",
-      "offset": 690,
-      "length": 23,
-      "value": "\"https:\/\/dgs.vmax.com\/\""
+      "offset": 488,
+      "length": 18,
+      "value": "\"alpharq.vmax.com\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 21,
+      "value": "\"as-vmax.fancode.com\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 601,
+      "length": 18,
+      "value": "\"alpharq.vmax.com\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 53,
+      "value": "\"https:\/\/as.vmax.com\/{accountKey}\/adspot\/1.0.1\/query\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 58,
+      "value": "\"https:\/\/alpharq.vmax.com\/{accountKey}\/adspot\/1.0.1\/query\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 61,
+      "value": "\"https:\/\/as-vmax.fancode.com\/{accountKey}\/adspot\/1.0.1\/query\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1032,
+      "length": 58,
+      "value": "\"https:\/\/alpharq.vmax.com\/{accountKey}\/adspot\/1.0.1\/query\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1263,
+      "length": 35,
+      "value": "\"https:\/\/ups.vmax.com\/{accountKey}\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1301,
+      "length": 49,
+      "value": "\"https:\/\/alpha-services-up.vmax.com\/{accountKey}\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1421,
+      "length": 31,
+      "value": "\"https:\/\/ups-vmax.fancode.com\/\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
+      "length": 49,
+      "value": "\"https:\/\/alpha-services-up.vmax.com\/{accountKey}\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1678,
+      "length": 35,
+      "value": "\"https:\/\/dgs.vmax.com\/{accountKey}\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1716,
+      "length": 46,
+      "value": "\"https:\/\/alpha-services.vmax.com\/{accountKey}\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 31,
+      "value": "\"https:\/\/dgs-vmax.fancode.com\/\""
+    },
+    {
+      "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Private\/VmaxConstant\/VmaxConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1867,
+      "length": 46,
+      "value": "\"https:\/\/alpha-services.vmax.com\/{accountKey}\""
     },
     {
       "filePath": "\/Users\/admin_vserv\/VservWorkspace\/Vserv_Git\/vmaxng-sdk-ios\/Vmax\/Vmax\/Swagger\/Models\/ResponsemainadextmetaAdmetaCampaignmeta.swift",

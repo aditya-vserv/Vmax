@@ -281,6 +281,28 @@ SWIFT_CLASS("_TtC4Vmax10VmaxAdView")
 
 
 
+/// VmaxRequest class holds the responsibility to fetch the advertisements from the delivery server.
+/// VmaxRequest class can be obtained from VmaxManager class via <code>createVmaxAdSpotRequestBuilder()</code> API.
+SWIFT_CLASS("_TtC4Vmax11VmaxRequest")
+@interface VmaxRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// VmaxAdsInsertionRequest class holds the responsibility to fetch the advertisements from the delivery server.
+/// VmaxAdsInsertionRequest class can be obtained from VmaxManager class via <code>createAdsInsertionRequestBuilder()</code> API.
+SWIFT_CLASS("_TtC4Vmax23VmaxAdsInsertionRequest")
+@interface VmaxAdsInsertionRequest : VmaxRequest
+@end
+
+
+/// VmaxAdsInsertionRequestBuilder allows you to create an instance of VmaxRequestBuilder with an adRequestType <code>adspot</code>.
+SWIFT_CLASS("_TtC4Vmax30VmaxAdsInsertionRequestBuilder")
+@interface VmaxAdsInsertionRequestBuilder : VMaxRequestBuilder
+@end
+
+
 /// VmaxAdspotRequestBuilder allows you to create an instance of VmaxRequestBuilder with an adRequestType <code>adspot</code>.
 SWIFT_CLASS("_TtC4Vmax24VmaxAdspotRequestBuilder")
 @interface VmaxAdspotRequestBuilder : VMaxRequestBuilder
@@ -485,14 +507,6 @@ SWIFT_CLASS("_TtC4Vmax12VmaxRegistry")
 @end
 
 
-
-/// VmaxRequest class holds the responsibility to fetch the advertisements from the delivery server.
-/// VmaxRequest class can be obtained from VmaxManager class via <code>createVmaxAdSpotRequestBuilder()</code> API.
-SWIFT_CLASS("_TtC4Vmax11VmaxRequest")
-@interface VmaxRequest : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 
@@ -794,6 +808,28 @@ SWIFT_CLASS("_TtC4Vmax10VmaxAdView")
 
 
 
+/// VmaxRequest class holds the responsibility to fetch the advertisements from the delivery server.
+/// VmaxRequest class can be obtained from VmaxManager class via <code>createVmaxAdSpotRequestBuilder()</code> API.
+SWIFT_CLASS("_TtC4Vmax11VmaxRequest")
+@interface VmaxRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// VmaxAdsInsertionRequest class holds the responsibility to fetch the advertisements from the delivery server.
+/// VmaxAdsInsertionRequest class can be obtained from VmaxManager class via <code>createAdsInsertionRequestBuilder()</code> API.
+SWIFT_CLASS("_TtC4Vmax23VmaxAdsInsertionRequest")
+@interface VmaxAdsInsertionRequest : VmaxRequest
+@end
+
+
+/// VmaxAdsInsertionRequestBuilder allows you to create an instance of VmaxRequestBuilder with an adRequestType <code>adspot</code>.
+SWIFT_CLASS("_TtC4Vmax30VmaxAdsInsertionRequestBuilder")
+@interface VmaxAdsInsertionRequestBuilder : VMaxRequestBuilder
+@end
+
+
 /// VmaxAdspotRequestBuilder allows you to create an instance of VmaxRequestBuilder with an adRequestType <code>adspot</code>.
 SWIFT_CLASS("_TtC4Vmax24VmaxAdspotRequestBuilder")
 @interface VmaxAdspotRequestBuilder : VMaxRequestBuilder
@@ -998,14 +1034,6 @@ SWIFT_CLASS("_TtC4Vmax12VmaxRegistry")
 @end
 
 
-
-/// VmaxRequest class holds the responsibility to fetch the advertisements from the delivery server.
-/// VmaxRequest class can be obtained from VmaxManager class via <code>createVmaxAdSpotRequestBuilder()</code> API.
-SWIFT_CLASS("_TtC4Vmax11VmaxRequest")
-@interface VmaxRequest : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 
