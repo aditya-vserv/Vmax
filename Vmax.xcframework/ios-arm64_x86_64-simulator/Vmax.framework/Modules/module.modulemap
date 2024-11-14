@@ -1,7 +1,7 @@
 framework module Vmax {
   umbrella header "Vmax.h"
-
   export *
+
   module * { export * }
 }
 

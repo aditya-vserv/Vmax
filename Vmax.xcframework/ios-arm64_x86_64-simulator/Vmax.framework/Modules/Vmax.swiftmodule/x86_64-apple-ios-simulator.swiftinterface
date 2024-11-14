@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Vmax
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -17,6 +17,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum VmaxAdAssetType {
   case instreamVideo, outstreamVideo, display, imamediation
   public static func == (a: Vmax.VmaxAdAssetType, b: Vmax.VmaxAdAssetType) -> Swift.Bool
@@ -27,7 +28,7 @@ public enum VmaxAdAssetType {
 }
 public class VmaxAdAssetHelperFactory {
   public init()
-  public func get(type: Vmax.VmaxAdAssetType) -> Vmax.VmaxAdAssetHelper?
+  public func get(type: Vmax.VmaxAdAssetType) -> (any Vmax.VmaxAdAssetHelper)?
   @objc deinit
 }
 public enum ExpandCollapse : Swift.Int {
@@ -132,11 +133,11 @@ extension Vmax.Sports : Swift.CaseIterable {
   @objc deinit
 }
 public protocol VmaxMediaEventsDelegate {
-  func set(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
-  func update(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
+  func set(vmaxMediaEvents: [any Vmax.VmaxMediaEvents])
+  func update(vmaxMediaEvents: [any Vmax.VmaxMediaEvents])
 }
 extension Vmax.VmaxMediaEventsDelegate {
-  public func update(vmaxMediaEvents: [Vmax.VmaxMediaEvents])
+  public func update(vmaxMediaEvents: [any Vmax.VmaxMediaEvents])
 }
 public protocol VmaxMediaEvents : AnyObject {
   func onImpression<T>(info: T?)
@@ -182,9 +183,9 @@ extension Vmax.VmaxMediaEvents {
 }
 public class VmaxMediaEventsObserver {
   public init()
-  public init(observers: [Vmax.VmaxMediaEvents])
-  public func add(observer: Vmax.VmaxMediaEvents)
-  public func remove(observer: Vmax.VmaxMediaEvents)
+  public init(observers: [any Vmax.VmaxMediaEvents])
+  public func add(observer: any Vmax.VmaxMediaEvents)
+  public func remove(observer: any Vmax.VmaxMediaEvents)
   public func removeAll()
   @objc deinit
 }
@@ -333,8 +334,8 @@ extension Vmax.HomeGarden : Swift.CaseIterable {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VmaxRegistry : ObjectiveC.NSObject {
   public static var shared: Vmax.VmaxRegistry
-  public func addVmaxAds(vmaxAds: [Vmax.VmaxAd.Type])
-  public func registerViewability(viewability: Vmax.VmaxAdViewability.Type)
+  public func addVmaxAds(vmaxAds: [any Vmax.VmaxAd.Type])
+  public func registerViewability(viewability: any Vmax.VmaxAdViewability.Type)
   public func getViewabilityVersion() -> Swift.String?
   @objc deinit
 }
@@ -528,11 +529,11 @@ public protocol VmaxAdViewability : ObjectiveC.NSObject {
   static func getVersion() -> Swift.String
 }
 public protocol VmaxViewabilityProtocol {
-  func add(viewability: Vmax.VmaxAdViewability)
-  func update(viewability: Vmax.VmaxAdViewability)
+  func add(viewability: any Vmax.VmaxAdViewability)
+  func update(viewability: any Vmax.VmaxAdViewability)
 }
 extension Vmax.VmaxViewabilityProtocol {
-  public func update(viewability: Vmax.VmaxAdViewability)
+  public func update(viewability: any Vmax.VmaxAdViewability)
 }
 public enum AdClickBrowser : Swift.Int {
   case embedded
@@ -555,12 +556,12 @@ extension Vmax.AdClickBrowser : Swift.CaseIterable {
   @objc deinit
 }
 extension Vmax.VmaxManager {
-  public func initialize(accountKey: Swift.String, appId: Swift.Int, secretKey: Swift.String, delegate: Vmax.InitializationStatusDelegate)
+  public func initialize(accountKey: Swift.String, appId: Swift.Int, secretKey: Swift.String, delegate: any Vmax.InitializationStatusDelegate)
   public func createVmaxAdSpace(tagId: Swift.String) -> Vmax.VmaxAdSpace?
   public func createVmaxAdspotRequestBuilder() -> Vmax.VmaxAdspotRequestBuilder
   public func createAdsInsertionRequestBuilder() -> Vmax.VmaxAdsInsertionRequestBuilder
   public func process(vmaxRequest: Vmax.VmaxRequest)
-  public func process(adsInsertionRequest: Vmax.VmaxAdsInsertionRequest, avPlayer: AVFoundation.AVPlayer, adContainer: UIKit.UIView, customLayout: Vmax.VmaxLayout?, adsInsertionProcessDelegate: Vmax.VmaxAdsInsertionProcessDelegate?, adsInsertionDelegate: Vmax.VmaxAdsInsertionDelegate?)
+  public func process(adsInsertionRequest: Vmax.VmaxAdsInsertionRequest, avPlayer: AVFoundation.AVPlayer, adContainer: UIKit.UIView, customLayout: (any Vmax.VmaxLayout)?, adsInsertionProcessDelegate: (any Vmax.VmaxAdsInsertionProcessDelegate)?, adsInsertionDelegate: (any Vmax.VmaxAdsInsertionDelegate)?)
   public func getVmaxUser() -> Vmax.VmaxUser
   public func getVmaxApplication() -> Vmax.VmaxApplication
   public func getVmaxDevice() -> Vmax.VmaxDevice
@@ -663,7 +664,7 @@ final public class VmaxSDKError : Vmax.VmaxError {
   @objc deinit
 }
 @objc public class VmaxCTAHandler : ObjectiveC.NSObject {
-  public init(urls: [Swift.String], viewControllerToPresent: UIKit.UIViewController, delegate: Vmax.VmaxCTAHandlerEvents, adClickBrowser: Vmax.AdClickBrowser)
+  public init(urls: [Swift.String], viewControllerToPresent: UIKit.UIViewController, delegate: any Vmax.VmaxCTAHandlerEvents, adClickBrowser: Vmax.AdClickBrowser)
   @objc deinit
   public func open()
 }
@@ -724,7 +725,7 @@ public protocol VmaxRefreshableAd : AnyObject {
   func shouldProcessRefresh() -> Swift.Bool
 }
 public protocol VmaxRefreshableAsset : AnyObject {
-  func set(adRefreshAsset: Vmax.VmaxRefreshableAssetDelegate)
+  func set(adRefreshAsset: any Vmax.VmaxRefreshableAssetDelegate)
 }
 public protocol VmaxRefreshableAssetDelegate : AnyObject {
   func onAdPaused()
@@ -819,13 +820,13 @@ public protocol VmaxAdsInsertion : ObjectiveC.NSObject {
 public struct VmaxAdsInsertionModel {
   public var avPlayer: AVFoundation.AVPlayer?
   public var adContainer: UIKit.UIView?
-  public var customLayout: Vmax.VmaxLayout?
+  public var customLayout: (any Vmax.VmaxLayout)?
   public var bumperAdSpaceList: [Vmax.VmaxAdSpace]?
   public var regularAdSpaceList: [Vmax.VmaxAdSpace]?
   public var recurrence: Vmax.AdRecurrence?
   public var minBreakDuration: Swift.Int?
   public var maxBreakDuration: Swift.Int?
-  public var adsInsertionDelegate: Vmax.VmaxAdsInsertionDelegate?
+  public var adsInsertionDelegate: (any Vmax.VmaxAdsInsertionDelegate)?
 }
 public enum AdRecurrence {
   case once
@@ -856,7 +857,7 @@ public protocol VmaxAdsInsertionProcessDelegate : ObjectiveC.NSObject {
 public class DampeningRequest {
   public init()
   public init(maxSleepValue: Swift.Int)
-  public func set(delegate: Vmax.DampeningRequestDelegate)
+  public func set(delegate: any Vmax.DampeningRequestDelegate)
   public func dampenAdRequest()
   public func resetDampen()
   public func releaseObject()
@@ -929,7 +930,7 @@ public protocol VmaxCTAHandlerEvents : AnyObject {
   func onCompleteCTA()
 }
 public protocol VmaxCtaHelper {
-  init(url: Swift.String, event: Vmax.VmaxCTAHandlerEvents, viewController: UIKit.UIViewController)
+  init(url: Swift.String, event: any Vmax.VmaxCTAHandlerEvents, viewController: UIKit.UIViewController)
   func open()
 }
 public enum MuteUnmute : Swift.Int {
@@ -947,7 +948,7 @@ public enum MuteUnmute : Swift.Int {
   @objc deinit
 }
 extension Vmax.VmaxAdView {
-  @_Concurrency.MainActor(unsafe) public func set(tag id: Swift.String, refresh interval: Swift.Int = 0, adClick browser: Vmax.AdClickBrowser = .embedded, layout: Vmax.VmaxLayout?)
+  @_Concurrency.MainActor(unsafe) public func set(tag id: Swift.String, refresh interval: Swift.Int = 0, adClick browser: Vmax.AdClickBrowser = .embedded, layout: (any Vmax.VmaxLayout)?)
   @_Concurrency.MainActor(unsafe) public func loadAd()
   @_Concurrency.MainActor(unsafe) public func pauseAd()
   @_Concurrency.MainActor(unsafe) public func resumeAd()
@@ -1011,7 +1012,7 @@ public protocol VmaxAdAssetHelper : ObjectiveC.NSObject {
   func prepare<T>(data: T)
   func show<T>(container: T)
   func getAssetView() -> UIKit.UIView?
-  func set(layout: Vmax.VmaxLayout)
+  func set(layout: any Vmax.VmaxLayout)
   func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
   func set(cacheMode: Vmax.VmaxCacheMode)
@@ -1025,7 +1026,7 @@ public protocol VmaxAdAssetHelper : ObjectiveC.NSObject {
   func cacheMediaIfNotCached()
 }
 extension Vmax.VmaxAdAssetHelper {
-  public func set(layout: Vmax.VmaxLayout)
+  public func set(layout: any Vmax.VmaxLayout)
   public func set(adInfo: Vmax.VmaxAdInfo)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
   public func set(cacheMode: Vmax.VmaxCacheMode)
@@ -1036,13 +1037,13 @@ extension Vmax.VmaxAdAssetHelper {
   public func cacheMediaIfNotCached()
 }
 public protocol VmaxAdAssetDelegate : AnyObject {
-  func onPrepared<T>(asset: Vmax.VmaxAdAssetHelper, result: T)
-  func onPrepareFailed(asset: Vmax.VmaxAdAssetHelper, error: Vmax.VmaxError)
-  func onRendered<T>(asset: Vmax.VmaxAdAssetHelper, result: T)
-  func onRenderFailed(asset: Vmax.VmaxAdAssetHelper, error: Vmax.VmaxError)
-  func onClicked(asset: Vmax.VmaxAdAssetHelper)
-  func onClickedComplete(asset: Vmax.VmaxAdAssetHelper)
-  func onClosed(asset: Vmax.VmaxAdAssetHelper)
+  func onPrepared<T>(asset: any Vmax.VmaxAdAssetHelper, result: T)
+  func onPrepareFailed(asset: any Vmax.VmaxAdAssetHelper, error: Vmax.VmaxError)
+  func onRendered<T>(asset: any Vmax.VmaxAdAssetHelper, result: T)
+  func onRenderFailed(asset: any Vmax.VmaxAdAssetHelper, error: Vmax.VmaxError)
+  func onClicked(asset: any Vmax.VmaxAdAssetHelper)
+  func onClickedComplete(asset: any Vmax.VmaxAdAssetHelper)
+  func onClosed(asset: any Vmax.VmaxAdAssetHelper)
 }
 public protocol VmaxWebAssetDelegate : Vmax.VmaxAdAssetDelegate {
 }
@@ -1053,7 +1054,7 @@ public struct VmaxViewabilityResource {
   public init(javaScriptResource: Swift.String?, vendorKey: Swift.String?, verificationParam: Swift.String?)
 }
 public protocol VmaxTrackerManager {
-  func prepare<T>(data: T) -> Vmax.VmaxTrackerManager
+  func prepare<T>(data: T) -> any Vmax.VmaxTrackerManager
   func get() -> Vmax.VmaxTracker?
 }
 public enum Careers : Swift.Int {
@@ -1198,7 +1199,7 @@ public protocol VmaxLayout : UIKit.UIView {
   func getParentContainer() -> UIKit.UIView?
   func setUpNib() throws
   func setUpInitialState()
-  func set(delegate: Vmax.VmaxLayoutDelegate)
+  func set(delegate: any Vmax.VmaxLayoutDelegate)
 }
 public protocol VmaxLayoutDelegate : AnyObject {
   func onAdClick()
@@ -1208,7 +1209,7 @@ extension Vmax.VmaxLayout {
   public func getParentContainer() -> UIKit.UIView?
   public func setUpNib() throws
   public func setUpInitialState()
-  public func set(delegate: Vmax.VmaxLayoutDelegate)
+  public func set(delegate: any Vmax.VmaxLayoutDelegate)
 }
 public enum AdPosition : Swift.Int {
   case unknown
@@ -1304,7 +1305,7 @@ extension Vmax.Society : Swift.CaseIterable {
   @objc deinit
 }
 extension Vmax.VmaxApplication {
-  public func setPageCategory(pageCategory: [Vmax.VmaxPages])
+  public func setPageCategory(pageCategory: [any Vmax.VmaxPages])
   public func setSectionCategory(sectionCategory: [Vmax.VmaxSections])
   public func setCustomData(customData: [Swift.String : Swift.String])
   public func setKeywords(keywords: [Swift.String])
@@ -1348,7 +1349,7 @@ public enum InteractionState {
   }
 }
 public protocol VmaxCompanionEventDelegate {
-  func set(companionEvents: Vmax.VmaxCompanionEvents)
+  func set(companionEvents: any Vmax.VmaxCompanionEvents)
 }
 public protocol VmaxCompanionEvents : AnyObject {
   func onCompanionReady<T>(obj: T)
@@ -1439,10 +1440,10 @@ extension Vmax.VmaxAdSpace {
   public func setRequestedAdOrientation(orientation: Vmax.Orientation)
   public func setAdClickBrowser(type: Vmax.AdClickBrowser)
   public func setInterstitialExperience(interstitialExperience: Swift.Bool)
-  public func addAdEventDelegate(adEventDelegate: Vmax.VmaxAdEventDelegate)
-  public func addMediaEvents(mediaEvents: Vmax.VmaxMediaEvents)
-  public func setCompanionEvents(companionEvents: Vmax.VmaxCompanionEvents)
-  public func setLayout(layout: Vmax.VmaxLayout)
+  public func addAdEventDelegate(adEventDelegate: any Vmax.VmaxAdEventDelegate)
+  public func addMediaEvents(mediaEvents: any Vmax.VmaxMediaEvents)
+  public func setCompanionEvents(companionEvents: any Vmax.VmaxCompanionEvents)
+  public func setLayout(layout: any Vmax.VmaxLayout)
   public func showAd(container: UIKit.UIView)
   public func getTagId() -> Swift.String
   public func setRefreshInterval(time: Swift.Int)
@@ -1450,22 +1451,23 @@ extension Vmax.VmaxAdSpace {
   public func resume()
   public func close()
   public func updateContainer(view: UIKit.UIView)
-  public func getVmaxAd() -> Vmax.VmaxAd?
+  public func getVmaxAd() -> (any Vmax.VmaxAd)?
   public func getId() -> Swift.String
   public func getState() -> Vmax.VmaxAdSpaceState
   public func setCacheMode(cacheMode: Vmax.VmaxCacheMode)
   public func setMediaLoadTimeout(timeoutInSeconds: Swift.Int)
+  public func getAdLayout() -> (any Vmax.VmaxLayout)?
   public func isVmaxAdSpaceRefreshable() -> Swift.Bool
 }
 extension Vmax.VmaxAdSpace : Vmax.VmaxAdDelegate {
-  public func onLoadSuccess(vmaxAd: Vmax.VmaxAd)
-  public func onLoadFailure(vmaxAd: Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
-  public func onRenderSuccess(vmaxAd: Vmax.VmaxAd)
-  public func onRenderFailure(vmaxAd: Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
+  public func onLoadSuccess(vmaxAd: any Vmax.VmaxAd)
+  public func onLoadFailure(vmaxAd: any Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
+  public func onRenderSuccess(vmaxAd: any Vmax.VmaxAd)
+  public func onRenderFailure(vmaxAd: any Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
   public func onAdPaused()
   public func onAdResumed()
-  public func onClose(vmaxAd: Vmax.VmaxAd)
-  public func onClicked(vmaxAd: Vmax.VmaxAd)
+  public func onClose(vmaxAd: any Vmax.VmaxAd)
+  public func onClicked(vmaxAd: any Vmax.VmaxAd)
 }
 public enum VmaxAdSpaceState {
   case unknown
@@ -1526,21 +1528,21 @@ public struct VmaxViewabilityMeta {
   public init(type: Vmax.VmaxViewabilityType)
 }
 public protocol VmaxAdDelegate : AnyObject {
-  func onLoadSuccess(vmaxAd: Vmax.VmaxAd)
-  func onLoadFailure(vmaxAd: Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
-  func onRenderSuccess(vmaxAd: Vmax.VmaxAd)
-  func onRenderFailure(vmaxAd: Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
+  func onLoadSuccess(vmaxAd: any Vmax.VmaxAd)
+  func onLoadFailure(vmaxAd: any Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
+  func onRenderSuccess(vmaxAd: any Vmax.VmaxAd)
+  func onRenderFailure(vmaxAd: any Vmax.VmaxAd, vmaxError: Vmax.VmaxError)
   func onAdPaused()
   func onAdResumed()
-  func onClose(vmaxAd: Vmax.VmaxAd)
-  func onClicked(vmaxAd: Vmax.VmaxAd)
+  func onClose(vmaxAd: any Vmax.VmaxAd)
+  func onClicked(vmaxAd: any Vmax.VmaxAd)
 }
 public protocol VmaxAd : ObjectiveC.NSObject {
-  func prepare(adResponse: Swift.String, delegate: Vmax.VmaxAdDelegate)
+  func prepare(adResponse: Swift.String, delegate: any Vmax.VmaxAdDelegate)
   func render(container: UIKit.UIView)
   static func getSignatures() -> [Swift.String]
-  func set(layout: Vmax.VmaxLayout)
-  func set(delegate: Vmax.VmaxAdDelegate)
+  func set(layout: any Vmax.VmaxLayout)
+  func set(delegate: any Vmax.VmaxAdDelegate)
   func set(adInfo: Vmax.VmaxAdInfo)
   func set(adClickBrowser: Vmax.AdClickBrowser)
   func set(cacheMode: Vmax.VmaxCacheMode)
@@ -1553,9 +1555,9 @@ public protocol VmaxAd : ObjectiveC.NSObject {
   func cacheMediaIfNotCached()
 }
 extension Vmax.VmaxAd {
-  public func set(delegate: Vmax.VmaxAdDelegate)
+  public func set(delegate: any Vmax.VmaxAdDelegate)
   public func set(adInfo: Vmax.VmaxAdInfo)
-  public func set(layout: Vmax.VmaxLayout)
+  public func set(layout: any Vmax.VmaxLayout)
   public func set(adClickBrowser: Vmax.AdClickBrowser)
   public func set(cacheMode: Vmax.VmaxCacheMode)
   public func set(mediaLoadTimeout: Swift.Int)
@@ -1588,6 +1590,7 @@ final public class VmaxAdInfo {
   final public var isCTAAvailable: Swift.Bool?
   final public var adIconUrl: Swift.String?
   final public var adClickUrl: Swift.String?
+  final public var companions: [Any]?
   final public var companionResourceUrls: [Swift.String]?
   final public var cacheMode: Vmax.VmaxCacheMode
   public init()
